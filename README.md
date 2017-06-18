@@ -1,4 +1,4 @@
-# angular2-persianDate-pipe
+# angular2-persian-date
 A simple Angular 2 pipe that convert Date to Persian date string 
 
 
