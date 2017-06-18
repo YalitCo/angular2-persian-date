@@ -16,12 +16,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/m-khosravi/angular2-persianDate-pipe.git"
+        "url": "git+https://github.com/m-khosravi/angular2-persian-date.git"
     },
     "bugs": {
-        "email": "https://github.com/m-khosravi/angular2-persianDate-pipe/issues"
+        "email": "https://github.com/m-khosravi/angular2-persian-date/issues"
     },
-    "homepage": "https://github.com/m-khosravi/angular2-persianDate-pipe/",
+    "homepage": "https://github.com/m-khosravi/angular2-persian-date/",
     "peerDependencies": {
         "@angular/core": ">=2.0.0 <5.0.0"
     },
