@@ -1,0 +1,11 @@
+.idea
+node_modules
+typings
+
+*.spec.js
+*.spec.js.map
+*.spec.d.ts
+
+# ngc generated files
+/compiled
+*.metadata.json
