@@ -1,10 +1,11 @@
 {
     "name": "angular2-persian-date",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "description": "Persian Date pipes for Angular2",
     "main": "index.ts",
     "files": [
         "index.ts",
+        "src",
         "persian-calendar-service.ts",
         "persian-date.module.ts",
         "persian-date.pipe.ts"
@@ -16,12 +17,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/m-khosravi/angular2-persian-date.git"
+        "url": "git+https://github.com/YalitCo/angular2-persian-date.git"
     },
     "bugs": {
-        "email": "https://github.com/m-khosravi/angular2-persian-date/issues"
+        "email": "https://github.com/YalitCo/angular2-persian-date/issues"
     },
-    "homepage": "https://github.com/m-khosravi/angular2-persian-date/",
+    "homepage": "https://github.com/YalitCo/angular2-persian-date/",
     "peerDependencies": {
         "@angular/core": ">=2.0.0 <5.0.0"
     },

@@ -1,0 +1,23 @@
+{
+    "name": "angular2-persian-date",
+    "description": "Persian Date pipes for Angular2",
+    "main": "index.ts",
+    "authors": [
+        "Mehdi Khosravi <m-khosravi@outlook.com> (http://mehdii.ir)"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "angular2",
+        "persian",
+        "date",
+        "pipe"
+    ],
+    "homepage": "https://github.com/m-khosravi/angular2-persianDate-pipe",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

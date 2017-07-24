@@ -9,3 +9,4 @@ typings
 # ngc generated files
 /compiled
 *.metadata.json
+npm-debug.log
