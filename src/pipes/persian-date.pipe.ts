@@ -1,5 +1,5 @@
 ﻿import { Injectable, Pipe } from '@angular/core';
-import {PersianCalendarService} from './persian-calendar-service';
+import {PersianCalendarService} from '../services/persian-calendar-service';
 
 /*
   Generated class for the PersianDate pipe.

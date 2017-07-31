@@ -1,17 +1,12 @@
+import {PersianCalendarService} from './services/persian-calendar-service';
 import { NgModule } from '@angular/core';
-
-import { PersianCalendarService } from './persian-calendar-service';
-import { PersianDate } from './persian-date.pipe';
-
-const ANGULAR_PERSIAN_DATE_PIPES = [
-    PersianCalendarService,
-    PersianDate,
-]
+import { PersianDate } from './pipes/persian-date.pipe';
 
 
 @NgModule({
-    declarations: ANGULAR_PERSIAN_DATE_PIPES,
-    exports: ANGULAR_PERSIAN_DATE_PIPES,
+    declarations: [PersianDate],
+    exports: [PersianDate],
+    providers:[PersianCalendarService]
 })
 
 export class PersianDateModule { }

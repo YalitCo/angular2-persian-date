@@ -1,3 +1,3 @@
-export {PersianDateModule} from './persian-date.module';
-export {PersianCalendarService} from './persian-calendar-service';
-export {PersianDate} from './persian-date.pipe';
+export {PersianCalendarService} from './services/persian-calendar-service';
+export { PersianDateModule } from './persian-date.module';
+export {PersianDate} from './pipes/persian-date.pipe';

@@ -27,16 +27,16 @@ export class PersianCalendarService {
 
   today: Date = new Date();
 
-  gregorianYear = null;
-  gregorianMonth = null;
-  gregorianDate = null;
-  WeekDay = null;
+  gregorianYear:number = null;
+  gregorianMonth:number = null;
+  gregorianDate:number = null;
+  WeekDay:number = null;
   buf1: number[] = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
   buf2: number[] = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
 
   constructor() {
   }
-  PersianCalendar(gregorianDate): string {
+  PersianCalendar(gregorianDate:Date): string {
     this.today = gregorianDate;
     this.gregorianYear = this.today.getFullYear();
     this.gregorianMonth = this.today.getMonth() + 1;
@@ -47,7 +47,7 @@ export class PersianCalendarService {
 
 
   }
-  toPersian(gregorianDate) {
+  toPersian(gregorianDate:Date) {
     if ((this.gregorianYear % 4) != 0)
       this.farsiDate = this.func1();
     else
