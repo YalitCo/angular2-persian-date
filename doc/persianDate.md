@@ -1,5 +1,6 @@
 ## persianDate pipe
 
+
 ``` typescript
 @Component({
   selector: 'app',
@@ -8,5 +9,6 @@
   `
 })
 ```
+
 
 Prints `چهارشنبه 30 فروردین 1396`
