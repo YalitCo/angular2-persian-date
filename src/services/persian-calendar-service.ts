@@ -1,4 +1,4 @@
-﻿import {Injectable} from '@angular/core';
+﻿import { Injectable } from '@angular/core';
 @Injectable()
 export class PersianCalendarService {
   weekDayNames: string[] = ["شنبه", "یکشنبه", "دوشنبه",
@@ -27,16 +27,16 @@ export class PersianCalendarService {
 
   today: Date = new Date();
 
-  gregorianYear:number = null;
-  gregorianMonth:number = null;
-  gregorianDate:number = null;
-  WeekDay:number = null;
+  gregorianYear: number = null;
+  gregorianMonth: number = null;
+  gregorianDate: number = null;
+  WeekDay: number = null;
   buf1: number[] = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
   buf2: number[] = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
 
   constructor() {
   }
-  PersianCalendar(gregorianDate:Date): string {
+  PersianCalendar(gregorianDate: Date): string {
     this.today = gregorianDate;
     this.gregorianYear = this.today.getFullYear();
     this.gregorianMonth = this.today.getMonth() + 1;
@@ -47,14 +47,18 @@ export class PersianCalendarService {
 
 
   }
-  toPersian(gregorianDate:Date) {
+  toPersian(gregorianDate: Date) {
     if ((this.gregorianYear % 4) != 0)
       this.farsiDate = this.func1();
     else
       this.farsiDate = this.func2();
     this.strMonth = this.monthNames[Math.floor(this.month - 1)];
-    this.strWeekDay = this.weekDayNames[this.WeekDay + 1];
-
+    //this.strWeekDay = this.weekDayNames[this.WeekDay + 1];
+    if (this.WeekDay == 6) {
+      this.strWeekDay = this.weekDayNames[0];
+    } else {
+      this.strWeekDay = this.weekDayNames[this.WeekDay + 1];
+    }
   }
 
 
