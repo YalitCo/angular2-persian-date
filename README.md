@@ -1,5 +1,5 @@
 # angular2-persian-date
-A simple Angular 2 pipe that convert Date to Persian date string 
+A simple Angular 2+ pipe that convert Date to Persian date string 
 
 
 Usage
@@ -12,7 +12,7 @@ import { PersianDateModule } from 'angular2-persian-date';
 
 @NgModule({
   imports: [
-    PersianDateModule
+    PersianDateModule,
   ]
 })
 ```
